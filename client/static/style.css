@@ -1,0 +1,168 @@
+/* Styles are here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.app {
+    display: flex;
+    align-items: center; /* Center horizontally */
+    justify-content: center;
+    width: 95%;
+    height: 95%;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow-y: scroll;
+}
+.username-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    padding: 20px;
+}
+.game-area {
+    display: grid;
+    grid-template-columns: repeat(20, 30px);
+    grid-template-rows: repeat(20, 30px);
+    width: 60%;
+    height: 90%;
+    border-left: 2px solid #333;
+    padding: 20px;
+    justify-content: center;
+}
+.online-users {
+    width: 40%;
+    padding: 20px;
+}
+.chat {
+    width: 90%;
+    height: 200px;
+    border-top: 2px solid #333;
+    margin-top: 20px;
+    padding: 20px;
+    overflow-y: scroll;
+}
+input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.online-users ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.online-users ul li {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+.chat-message {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+.input-container{
+    margin-top: 20px;
+    padding: 20px;
+}
+#errorMessage{
+    color: red;
+}
+  
+.cell {
+    width: 30px;
+    height: 30px;
+    background-image: url("images/grass.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+.player {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.player1 {
+    background-image: url('images/character1.png');
+}
+  
+.player2 {
+    background-image: url('images/character2.png');
+}
+  
+.player3 {
+    background-image: url('images/character3.png');
+}
+  
+.player4 {
+    background-image: url('images/character4.png');
+}
+  
+.obstacle {
+    background-image: url('images/crate.png');
+}
+.barrier {
+    background-image: url('images/wall.png');
+}
+.bomb {
+    background-image: url("images/bomb.png");
+}
+.fire {
+    background-image: url('images/explosion1.png');
+}
+.powerup-fire {
+    background-image: url('images/powerup3.png');
+}
+.powerup-bomb {
+    background-image: url('images/powerup1.png');
+}
+.powerup-speed {
+    background-image: url('images/powerup2.png');
+}
+
+#endscreen {
+    width: 300px; /* Set width */
+    height: 200px; /* Set height */
+    background-color: lightblue;
+    border-radius: 15px; /* Add rounded corners */
+    position: fixed; /* Position fixed so it stays in the middle */
+    top: 50%; /* Position from the top */
+    left: 50%; /* Position from the left */
+    transform: translate(-50%, -50%); /* Center the element */
+    padding: 20px; /* Add padding for content */
+    box-sizing: border-box; /* Include padding in width and height */
+  }
+
+#countdown{
+    z-index: 100;
+    width: 50%;
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+    font-size: 36px;
+    text-align: center;
+    border-radius: 15px;
+    position: fixed;
+}
